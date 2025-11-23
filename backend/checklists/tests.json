@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Get all checklists",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "bodyMatcher": "skip"
+    },
+    {
+      "name": "Create new checklist",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "title": "Утренняя рутина",
+        "description": "Ежедневные утренние задачи",
+        "sphere_id": 1
+      },
+      "expectedStatus": 201,
+      "bodyMatcher": "skip"
+    }
+  ]
+}
