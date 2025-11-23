@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Get all spheres",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "bodyMatcher": "skip"
+    },
+    {
+      "name": "Create new sphere",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тест сфера",
+        "icon": "Star",
+        "color": "#FF5733"
+      },
+      "expectedStatus": 201,
+      "bodyMatcher": "skip"
+    }
+  ]
+}
